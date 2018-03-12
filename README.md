@@ -1,4 +1,4 @@
-# sleep-ts [![Build Status](https://travis-ci.org/dguo/sleep-ts.svg?branch=master)](https://travis-ci.org/dguo/sleep-ts)
+# sleep-ts [![Build Status](https://travis-ci.org/dguo/sleep-ts.svg?branch=master)](https://travis-ci.org/dguo/sleep-ts) [![Known Vulnerabilities](https://snyk.io/test/github/dguo/sleep-ts/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dguo/sleep-ts?targetFile=package.json)
 Pause JavaScript execution for a specified amount of time using
 [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 Works elegantly with
