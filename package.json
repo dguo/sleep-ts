@@ -1,0 +1,68 @@
+{
+    "name": "sleep-ts",
+    "version": "0.1.0",
+    "description":
+        "Sleep / pause execution using Promises and flexible time formats",
+    "keywords": ["sleep", "delay", "pause", "promise", "suspend", "wait"],
+    "homepage": "https://github.com/dguo/sleep-ts",
+    "bugs": "https://github.com/dguo/sleep-ts/issues",
+    "license": "MIT",
+    "author": {
+        "name": "Danny Guo",
+        "email": "dannyguo91@gmail.com",
+        "url": "https://dannyguo.com"
+    },
+    "files": ["dist"],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dguo/sleep-ts.git"
+    },
+    "engines": {
+        "node": ">=4"
+    },
+    "scripts": {
+        "build": "yarn run clean && tsc",
+        "build:watch": "yarn run clean && tsc --watch",
+        "clean": "rimraf dist",
+        "ci":
+            "yarn run format:check && yarn run lint && yarn run test && yarn run build",
+        "format": "prettier --write \"./**/*.{json,ts}\"",
+        "format:check": "prettier --list-different \"./**/*.{json,ts}\"",
+        "lint": "tslint index.ts",
+        "precommit":
+            "yarn run format && yarn run lint && yarn run test && yarn run build",
+        "prepack": "yarn run precommit",
+        "start": "yarn install && yarn run test:watch",
+        "test": "jest",
+        "test:watch": "jest --watchAll"
+    },
+    "dependencies": {
+        "ms": "^2.1.1"
+    },
+    "devDependencies": {
+        "@types/jest": "^22.2.0",
+        "@types/ms": "^0.7.30",
+        "jest": "^22.4.2",
+        "prettier": "^1.11.1",
+        "rimraf": "^2.6.2",
+        "ts-jest": "^22.4.1",
+        "tslint": "^5.9.1",
+        "tslint-config-prettier": "^1.9.0",
+        "typescript": "^2.7.2"
+    },
+    "jest": {
+        "collectCoverage": true,
+        "transform": {
+            "^.+\\.tsx?$": "ts-jest"
+        },
+        "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+        "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+    },
+    "prettier": {
+        "bracketSpacing": false,
+        "singleQuote": true,
+        "tabWidth": 4
+    }
+}
