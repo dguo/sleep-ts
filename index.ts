@@ -21,7 +21,7 @@ export function sleep<T>(duration: number | string, value?: T): Promise<T> {
                 return Promise.reject('Invalid duration string.');
             }
         } catch (error) {
-            return Promise.reject(error);
+            return Promise.reject('Invalid duration string.');
         }
     } else {
         return Promise.reject('Duration must be a valid number or string.');
