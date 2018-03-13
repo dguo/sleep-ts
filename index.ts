@@ -1,4 +1,4 @@
-import ms = require('ms');
+import ms from 'ms';
 
 export function sleep<T>(duration: number | string, value?: T): Promise<T> {
     let durationInMilliseconds = duration;
