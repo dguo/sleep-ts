@@ -28,7 +28,7 @@ def lint(args, remaining):
 
 @command('Run before committing')
 def precommit(args, remaining):
-    return run(DOCKER_RUN + ['yarn', 'run', 'precommit']).returncode
+    return run(DOCKER_RUN + ['yarn', 'run', 'prepublishOnly']).returncode
 
 @command('Publish to the npm registry')
 def publish(args, remaining):
