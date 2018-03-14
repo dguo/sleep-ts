@@ -44,6 +44,18 @@ sleep(4000).then(() => {
 }).then(response => {
     console.log(response);
 });
+
+```
+
+Output:
+```sh
+Hello
+# 3 seconds later
+World
+# 1 second later
+PING
+# 3 seconds later
+PONG
 ```
 
 ## Alternatives
