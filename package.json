@@ -26,8 +26,6 @@
         "build": "yarn run clean && tsc",
         "build:watch": "yarn run clean && tsc --watch",
         "clean": "rimraf dist",
-        "ci":
-            "yarn run format:check && yarn run lint && yarn run test && yarn run build",
         "format": "prettier --write \"./**/*.{json,ts}\"",
         "format:check": "prettier --list-different \"./**/*.{json,ts}\"",
         "lint": "tslint index.ts",
