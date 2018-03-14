@@ -1,6 +1,6 @@
 {
     "name": "sleep-ts",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description":
         "Sleep / pause execution using Promises and flexible time formats",
     "keywords": ["sleep", "delay", "pause", "promise", "suspend", "wait"],
