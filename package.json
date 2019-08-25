@@ -36,7 +36,7 @@
         "clean": "rimraf dist",
         "format": "prettier --write \"./**/*.{json,ts}\"",
         "format:check": "prettier --list-different \"./**/*.{json,ts}\"",
-        "lint": "tslint index.ts",
+        "lint": "eslint *.ts",
         "prepublishOnly": "yarn run format && yarn run lint && yarn run test && yarn run build",
         "start": "yarn install && yarn run test:watch",
         "test": "jest",
@@ -48,13 +48,32 @@
     "devDependencies": {
         "@types/jest": "^24.0.18",
         "@types/ms": "^0.7.30",
+        "@typescript-eslint/eslint-plugin": "^2.0.0",
+        "@typescript-eslint/parser": "^2.0.0",
+        "eslint": "^6.2.2",
+        "eslint-config-prettier": "^6.1.0",
         "jest": "^24.9.0",
         "prettier": "^1.18.2",
         "rimraf": "^3.0.0",
         "ts-jest": "^24.0.2",
-        "tslint": "^5.19.0",
-        "tslint-config-prettier": "^1.18.0",
         "typescript": "^3.5.3"
+    },
+    "eslintConfig": {
+        "parser": "@typescript-eslint/parser",
+        "env": {
+            "browser": true,
+            "es6": true,
+            "node": true
+        },
+        "extends": [
+            "eslint:recommended",
+            "plugin:@typescript-eslint/recommended",
+            "prettier",
+            "prettier/@typescript-eslint"
+        ],
+        "rules": {
+            "@typescript-eslint/no-explicit-any": "off"
+        }
     },
     "jest": {
         "collectCoverage": true,

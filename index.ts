@@ -29,7 +29,7 @@ export function sleep<T>(duration: number | string, value?: T): Promise<T> {
         return Promise.reject('Duration must be a valid number or string.');
     }
 
-    return new Promise(resolve =>
+    return new Promise((resolve): any =>
         setTimeout(() => {
             resolve(value);
         }, durationInMilliseconds)
