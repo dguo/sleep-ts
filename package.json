@@ -28,7 +28,7 @@
         "url": "https://github.com/dguo/sleep-ts.git"
     },
     "engines": {
-        "node": ">=4"
+        "node": ">=8"
     },
     "scripts": {
         "build": "yarn run clean && tsc",
