@@ -1,9 +1,15 @@
 {
     "name": "sleep-ts",
     "version": "0.1.1",
-    "description":
-        "Sleep / pause execution using Promises and flexible time formats",
-    "keywords": ["sleep", "delay", "pause", "promise", "suspend", "wait"],
+    "description": "Sleep / pause execution using Promises and flexible time formats",
+    "keywords": [
+        "sleep",
+        "delay",
+        "pause",
+        "promise",
+        "suspend",
+        "wait"
+    ],
     "homepage": "https://github.com/dguo/sleep-ts",
     "bugs": "https://github.com/dguo/sleep-ts/issues",
     "license": "MIT",
@@ -12,7 +18,9 @@
         "email": "dannyguo91@gmail.com",
         "url": "https://dannyguo.com"
     },
-    "files": ["dist"],
+    "files": [
+        "dist"
+    ],
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "repository": {
@@ -29,25 +37,24 @@
         "format": "prettier --write \"./**/*.{json,ts}\"",
         "format:check": "prettier --list-different \"./**/*.{json,ts}\"",
         "lint": "tslint index.ts",
-        "prepublishOnly":
-            "yarn run format && yarn run lint && yarn run test && yarn run build",
+        "prepublishOnly": "yarn run format && yarn run lint && yarn run test && yarn run build",
         "start": "yarn install && yarn run test:watch",
         "test": "jest",
         "test:watch": "jest --watchAll"
     },
     "dependencies": {
-        "ms": "^2.1.1"
+        "ms": "^2.1.2"
     },
     "devDependencies": {
-        "@types/jest": "^22.2.0",
+        "@types/jest": "^24.0.18",
         "@types/ms": "^0.7.30",
-        "jest": "^22.4.2",
-        "prettier": "^1.11.1",
-        "rimraf": "^2.6.2",
-        "ts-jest": "^22.4.1",
-        "tslint": "^5.9.1",
-        "tslint-config-prettier": "^1.9.0",
-        "typescript": "^2.7.2"
+        "jest": "^24.9.0",
+        "prettier": "^1.18.2",
+        "rimraf": "^3.0.0",
+        "ts-jest": "^24.0.2",
+        "tslint": "^5.19.0",
+        "tslint-config-prettier": "^1.18.0",
+        "typescript": "^3.5.3"
     },
     "jest": {
         "collectCoverage": true,
@@ -55,7 +62,14 @@
             "^.+\\.tsx?$": "ts-jest"
         },
         "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-        "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ]
     },
     "prettier": {
         "bracketSpacing": false,

@@ -1,7 +1,7 @@
 import ms from 'ms';
 
 export function sleep<T>(duration: number | string, value?: T): Promise<T> {
-    let durationInMilliseconds = duration;
+    let durationInMilliseconds: number;
 
     if (typeof duration === 'number') {
         if (
@@ -11,6 +11,8 @@ export function sleep<T>(duration: number | string, value?: T): Promise<T> {
         ) {
             return Promise.reject('Duration must be a non-negative integer.');
         }
+
+        durationInMilliseconds = duration;
     } else if (typeof duration === 'string') {
         try {
             durationInMilliseconds = ms(duration);

@@ -13,7 +13,15 @@ test('good durations', async () => {
 });
 
 test('bad durations', async () => {
-    const badValues = [-23, '-200', 'unami', null, undefined, {foo: 'bar'}, {}];
+    const badValues: any[] = [
+        -23,
+        '-200',
+        'unami',
+        null,
+        undefined,
+        {foo: 'bar'},
+        {}
+    ];
 
     for (const value of badValues) {
         await expect(sleep(value)).rejects.toMatch('');
