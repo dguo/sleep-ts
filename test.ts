@@ -1,3 +1,5 @@
+/* eslint-env jest */
+
 import {sleep} from './index';
 
 beforeEach(() => {
@@ -48,7 +50,7 @@ test('the passage of time', async () => {
     jest.useFakeTimers();
 
     const mock = jest.fn();
-    const promise = sleep(1000).then(() => {
+    sleep(1000).then(() => {
         mock();
     });
 
