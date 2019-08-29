@@ -1,4 +1,12 @@
-# sleep-ts [![npm](https://img.shields.io/npm/v/sleep-ts.svg)](https://www.npmjs.com/package/sleep-ts) [![npm](https://img.shields.io/npm/l/sleep-ts.svg)](https://github.com/dguo/sleep-ts/blob/master/LICENSE) [![Build Status](https://travis-ci.org/dguo/sleep-ts.svg?branch=master)](https://travis-ci.org/dguo/sleep-ts) [![codecov](https://codecov.io/gh/dguo/sleep-ts/branch/master/graph/badge.svg)](https://codecov.io/gh/dguo/sleep-ts) [![Known Vulnerabilities](https://snyk.io/test/github/dguo/sleep-ts/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dguo/sleep-ts?targetFile=package.json)
+# sleep-ts
+
+[![npm](https://img.shields.io/npm/v/sleep-ts.svg)](https://www.npmjs.com/package/sleep-ts)
+[![license](https://img.shields.io/npm/l/sleep-ts.svg)](https://github.com/dguo/sleep-ts/blob/master/LICENSE)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/sleep-ts)](https://bundlephobia.com/result?p=sleep-ts)
+[![build status](https://travis-ci.org/dguo/sleep-ts.svg?branch=master)](https://travis-ci.org/dguo/sleep-ts)
+[![test coverage](https://codecov.io/gh/dguo/sleep-ts/branch/master/graph/badge.svg)](https://codecov.io/gh/dguo/sleep-ts)
+[![known vulnerabilities](https://snyk.io/test/github/dguo/sleep-ts/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dguo/sleep-ts?targetFile=package.json)
+
 Pause JavaScript execution for a specified amount of time using
 [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 Works elegantly with
@@ -8,6 +16,7 @@ be parsed by the [ms package](https://github.com/zeit/ms)). Implemented in
 [TypeScript](http://www.typescriptlang.org/).
 
 ## Installation
+
 ```sh
 $ yarn add sleep-ts
 # or
@@ -15,6 +24,7 @@ $ npm install --save sleep-ts
 ```
 
 ## Usage
+
 ```js
 import {sleep} from 'sleep-ts';
 // or
@@ -59,10 +69,12 @@ PONG
 ```
 
 ## Alternatives
+
 * If you don't care about the fancy time format parsing, you can use [sleep-promise](https://github.com/brummelte/sleep-promise), which might save you a subdependency on the `ms` package.
 * Use [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) if you're okay with using callbacks.
 
 ## Other Languages
+
 * C#: [Thread.Sleep](https://docs.microsoft.com/en-us/dotnet/api/system.threading.thread.sleep)
 * C++: [std::this_thread::sleep_for](http://www.cplusplus.com/reference/thread/this_thread/sleep_for/) (since C++11; otherwise, check out [these methods](http://www.martinbroadhurst.com/sleep-for-milliseconds-in-c.html))
 * Go: [time.Sleep](https://golang.org/pkg/time/#Sleep)
@@ -75,4 +87,5 @@ PONG
 * Rust: [std::thread::sleep](https://doc.rust-lang.org/std/thread/fn.sleep.html)
 
 ## License
+
 [MIT](https://github.com/dguo/sleep-ts/blob/master/LICENSE)
