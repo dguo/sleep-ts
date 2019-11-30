@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/sleep-ts.svg)](https://www.npmjs.com/package/sleep-ts)
 [![license](https://img.shields.io/npm/l/sleep-ts.svg)](https://github.com/dguo/sleep-ts/blob/master/LICENSE)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/sleep-ts)](https://bundlephobia.com/result?p=sleep-ts)
-[![build status](https://travis-ci.org/dguo/sleep-ts.svg?branch=master)](https://travis-ci.org/dguo/sleep-ts)
+[![CI status](https://github.com/dguo/sleep-ts/workflows/CI/badge.svg)](https://github.com/dguo/sleep-ts/actions?query=branch%3Amaster)
 [![test coverage](https://codecov.io/gh/dguo/sleep-ts/branch/master/graph/badge.svg)](https://codecov.io/gh/dguo/sleep-ts)
 [![known vulnerabilities](https://snyk.io/test/github/dguo/sleep-ts/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dguo/sleep-ts?targetFile=package.json)
 
