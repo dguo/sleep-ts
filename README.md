@@ -1,10 +1,10 @@
 # sleep-ts
 
 [![npm](https://img.shields.io/npm/v/sleep-ts.svg)](https://www.npmjs.com/package/sleep-ts)
-[![license](https://img.shields.io/npm/l/sleep-ts.svg)](https://github.com/dguo/sleep-ts/blob/master/LICENSE)
+[![license](https://img.shields.io/npm/l/sleep-ts.svg)](https://github.com/dguo/sleep-ts/blob/main/LICENSE)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/sleep-ts)](https://bundlephobia.com/result?p=sleep-ts)
-[![CI status](https://github.com/dguo/sleep-ts/workflows/CI/badge.svg)](https://github.com/dguo/sleep-ts/actions?query=branch%3Amaster)
-[![test coverage](https://codecov.io/gh/dguo/sleep-ts/branch/master/graph/badge.svg)](https://codecov.io/gh/dguo/sleep-ts)
+[![CI status](https://github.com/dguo/sleep-ts/workflows/CI/badge.svg)](https://github.com/dguo/sleep-ts/actions?query=branch%3Amain)
+[![test coverage](https://codecov.io/gh/dguo/sleep-ts/branch/main/graph/badge.svg)](https://codecov.io/gh/dguo/sleep-ts)
 [![known vulnerabilities](https://snyk.io/test/github/dguo/sleep-ts/badge.svg?targetFile=package.json)](https://snyk.io/test/github/dguo/sleep-ts?targetFile=package.json)
 
 Pause JavaScript execution for a specified amount of time using
@@ -88,4 +88,4 @@ PONG
 
 ## License
 
-[MIT](https://github.com/dguo/sleep-ts/blob/master/LICENSE)
+[MIT](https://github.com/dguo/sleep-ts/blob/main/LICENSE)
