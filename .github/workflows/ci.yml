@@ -34,7 +34,5 @@ jobs:
         run: yarn run test
       - name: Build the code
         run: yarn run build
-      - name: Upload code coverage
+      - name: Upload code coverage to Codecov
         uses: codecov/codecov-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
